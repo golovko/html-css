@@ -1,0 +1,141 @@
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    font-family: Arial, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+nav {
+    background-color: #333;
+    color: #fff;
+    text-align: end;
+    padding: 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+header {
+    display: grid;
+    grid-template-columns: [left] 2fr [right] 1fr;
+    padding: 50px 80px;
+}
+
+header h1 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+header h2 {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+header img {
+    border-radius: 50%;
+    margin-top: 20px;
+    border: #fff 5px solid;
+    padding: 4px;
+    width: 250px;
+}
+
+.left {
+grid-area: left;
+padding-right: 80px;
+}
+
+.right {
+ grid-area: right;
+}
+
+button {
+    background: linear-gradient(128deg, rgba(237,230,1,0.8) 0%, rgba(0,185,255,0.8) 100%);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+main {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.portfolio h2 {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+
+article {
+    margin-top: 20px;
+    padding: 20px 80px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.featured {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 24px;
+
+}
+.featured img {
+    width: 350px;
+    padding: 20px;
+}
+.featured p {
+    width: 300px;
+    padding: 20px;
+}
+.featured h3 {
+    padding: 20px 0px;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+      background: lightblue;
+    }
+    header {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 50px 80px;
+        text-align: center;
+    }
+    .left {
+        grid-area: left;
+        }
+    .portfolio {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+  }
